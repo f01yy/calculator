@@ -21,7 +21,7 @@ calculator.onclick = (event) => {
       let expr = output.value;
       expr = expr.replaceAll('×', '*');
       expr = expr.replaceAll('÷', '/');
-      output.value = eval(expr);
+      output.value = Number(parseFloat(eval(expr)).toPrecision(12));
     }
   } catch (error) {
     output.value = 'Wrong input';
