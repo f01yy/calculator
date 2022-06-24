@@ -32,6 +32,12 @@ body {
   min-height: 60vh;
 }
 
+@media screen and (max-width: 540px) {
+  .calculator {
+    width: 100%;
+  }
+}
+
 .container-2 {
   display: flex;
   flex: 4;
