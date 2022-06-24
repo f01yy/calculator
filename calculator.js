@@ -9,6 +9,10 @@ calculator.onclick = (event) => {
     let target = event.target;
     let content = target.innerHTML;
 
+    if (output.value === 'Wrong input') {
+      output.value = '';
+    }
+
     if (allowedSymbols.includes(content)) {
       output.value += content;
     }
@@ -23,6 +27,7 @@ calculator.onclick = (event) => {
       expr = expr.replaceAll('÷', '/');
       output.value = Number(parseFloat(eval(expr)).toPrecision(12));
     }
+
   } catch (error) {
     output.value = 'Wrong input';
   }
