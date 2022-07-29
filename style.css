@@ -31,12 +31,6 @@ body {
   user-select: none;
 }
 
-@media screen and (max-width: 540px) {
-  .calculator {
-    width: 100%;
-  }
-}
-
 .container-2 {
   display: flex;
   flex: 4;
@@ -124,4 +118,14 @@ body {
 
 .output:focus {
   outline: none;
+}
+
+@media screen and (max-width: 540px) {
+  .calculator {
+    width: 100%;
+  }
+
+  .output {
+    font-size: 32px;
+  }
 }
